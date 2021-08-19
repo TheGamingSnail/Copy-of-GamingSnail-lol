@@ -31,7 +31,7 @@ class Main extends PluginBase
     return true;
     }
   public function ui($player){
-    $form = $this->getServer()->getPluginManager()->getPlugin("FormAPI")->createSimpleForm(function (Player $player, int $data = null){
+    $form = $this->getServer()->getPluginManager()->getPlugin("FormAPI")->createCustomForm(function (Player $player, int $data = null){
       if($data === null){
         return true;
       }
@@ -48,8 +48,6 @@ class Main extends PluginBase
 
         case 2:
           $this->getServer()->dispatchCommand($player, "ce enchant driller" . $data[2]);
-          
-        break;
       }
       return true;
     });
