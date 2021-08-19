@@ -26,16 +26,16 @@ class Main extends PluginBase{
     }
     return true;
   }
-  public function ui($player){
+  public function ui($sender){
     $form = $this->getServer()->getPluginManager()->getPlugin("FormAPI")->createCustomForm(function (Player $player, int $data = null){
       switch($data){
         case 0:
-          $this->getServer()->dispatchCommand("ce enchant driller" . $player . $data[0]);
+          $this->getServer()->dispatchCommand($player, "ce enchant driller . $data[0])";
 
         break;
 
         case 1:
-          $this->getServer()->dispatchCommand("ce enchant autorepair" . $player . $data[0]);;
+          $this->getServer()->dispatchCommand($player, "ce enchant autorepair . $data[1]");
 
         break;
       }
@@ -44,6 +44,6 @@ class Main extends PluginBase{
     $form->addSlider("Driller", 0, 10);
     $form->addSlider("Auto Repair", 0, 10);
     $form->sendToPlayer($player);
-    return $form;
+    return form;
   }
 }
