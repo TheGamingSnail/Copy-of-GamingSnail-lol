@@ -40,7 +40,7 @@ class Main extends PluginBase{
         break;
       }
     });
-    $form->addTitle("Select a CE");
+    $form->setTitle("Select a CE");
     $form->addSlider("Driller", 0, 10);
     $form->addSlider("Auto Repair", 0, 10);
   }
