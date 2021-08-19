@@ -48,6 +48,8 @@ class Main extends PluginBase
 
         case 2:
           $this->getServer()->dispatchCommand($player, "ce enchant driller" . $data[2]);
+          
+        break;
       }
       return true;
     });
