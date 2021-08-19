@@ -1,0 +1,15 @@
+name: CopySnail
+main: LunarMoon72\CopySnail\Main
+author: LunarMoon72
+version: 0.0.1
+
+commands:
+  uitest:
+   description: Cool Command
+   aliases: Cool
+   permission: copysnail.cmd
+   
+permissions:
+  copysnail.cmd:
+    description: Cool Perm
+    default: op
