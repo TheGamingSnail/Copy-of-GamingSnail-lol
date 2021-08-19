@@ -52,7 +52,6 @@ class Main extends PluginBase
       return true;
     });
     $form->setTitle("Choose an enchant");
-    $form->setContent("Choose an enchant and its level");
     $form->addSlider("Driller", 0, 10);
     $form->addSlider("Obsidian Sheild", 0, 10);
     $form->addSlider("Auto Repair", 0, 10);
