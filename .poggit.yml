@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/LunarMoon72/Copy-of-GamingSnail-lol
+build-by-default: true
+branches:
+- main
+projects:
+  Copy-of-GamingSnail-lol:
+    path: ""
+...
