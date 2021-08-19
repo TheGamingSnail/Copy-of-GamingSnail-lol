@@ -26,7 +26,7 @@ class Main extends PluginBase{
     }
     return true;
   }
-  public function ui($sender){
+  public function ui($player){
     $form = $this->getServer()->getPluginManager()->getPlugin("FormAPI")->createCustomForm(function (Player $player, int $data = null){
       switch($data){
         case 0:
