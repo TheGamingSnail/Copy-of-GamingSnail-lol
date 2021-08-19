@@ -44,6 +44,6 @@ class Main extends PluginBase{
     $form->addSlider("Driller", 0, 10);
     $form->addSlider("Auto Repair", 0, 10);
     $form->sendToPlayer($player);
-    return form;
+    return $form;
   }
 }
