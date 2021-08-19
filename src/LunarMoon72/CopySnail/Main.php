@@ -21,12 +21,12 @@ class Main extends PluginBase{
     switch($cmd->getName()){
       case "ceedit":
         if($sender instanceof Player){
-          $sender->ui($player);
+          $this->ui($sender);
         }
     }
     return true;
   }
-  public function ui(Player $player){
+  public function ui($player){
     $form = $this->getServer()->getPluginManager()->getPlugin("FormAPI")->createCustomForm(function (Player $player, int $data = null){
       switch($data){
         case 0:
