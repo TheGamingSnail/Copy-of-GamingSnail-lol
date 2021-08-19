@@ -1,6 +1,6 @@
 <?php
 
-namespace LunarMoon72\CeEditForm;
+namespace LunarMoon72\CopySnail;
 
 use pocketmine\plugin\PluginBase;
 
@@ -10,7 +10,7 @@ use pocketmine\command\Command;
 use pocketmine\Player;
 use pocketmine\Server;
 
-class Form extends PluginBase
+class Main extends PluginBase
 {
   public function onEnabled()
   {
