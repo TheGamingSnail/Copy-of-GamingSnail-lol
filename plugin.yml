@@ -5,7 +5,7 @@ version: 0.0.1
 api: 3.21.1
 
 commands:
-  uitest:
+  ceedit:
    description: Cool Command
    aliases: Cool
    permission: copysnail.cmd
