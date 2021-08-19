@@ -31,12 +31,10 @@ class Main extends PluginBase{
       switch($data){
         case 0:
           $this->getServer()->dispatchCommand($player, "ce enchant driller" . $data[0]);
-
         break;
 
         case 1:
           $this->getServer()->dispatchCommand($player, "ce enchant autorepair" . $data[1]);
-
         break;
       }
     });
