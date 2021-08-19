@@ -30,12 +30,12 @@ class Main extends PluginBase{
     $form = $this->getServer()->getPluginManager()->getPlugin("FormAPI")->createCustomForm(function (Player $player, int $data = null){
       switch($data){
         case 0:
-          $this->getServer()->dispatchCommand($player, "ce enchant driller" . $player . $data[0]);
+          $this->getServer()->dispatchCommand("ce enchant driller" . $player . $data[0]);
 
         break;
 
         case 1:
-          $this->getServer()->dispatchCommand($player, "ce enchant autorepair" . $data[0]);
+          $this->getServer()->dispatchCommand("ce enchant autorepair" . $player . $data[0]);;
 
         break;
       }
