@@ -2,6 +2,7 @@ name: CopySnail
 main: LunarMoon72\CopySnail\Main
 author: LunarMoon72
 version: 0.0.1
+api: 3.21.1
 
 commands:
   uitest:
